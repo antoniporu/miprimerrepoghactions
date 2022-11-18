@@ -22,6 +22,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: main
+      - name: pwd
+          run: pwd
+      - name: ls
+          run: ls
       - uses: actions/setup-go@v3
         with:
           go-version: '1.16.1' # The Go version to download (if necessary) and use.
