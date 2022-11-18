@@ -25,9 +25,9 @@ jobs:
         with:
           ref: main
       - name: pwd
-          run: pwd
+        run: pwd
       - name: ls
-          run: ls
+        run: ls
       - uses: actions/setup-go@v3
         with:
           go-version: '1.16.1' # The Go version to download (if necessary) and use.
